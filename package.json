@@ -1,0 +1,28 @@
+{
+  "name": "node-authentication-seed",
+  "version": "0.0.1",
+  "description": "A seed node project with passport authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*.test.js",
+    "spec": "DB_URL=mongodb://localhost:27017/integ-tests mocha ./spec/**/*.spec.js",
+    "start-local-api": "node ./src/infrastructure/rest-api/server.js"
+  },
+  "author": "Patrick Kayongo",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.5.0",
+    "bcrypt": "1.0.3",
+    "body-parser": "1.18.1",
+    "dotenv": "4.0.0",
+    "express": "4.15.4",
+    "mongodb": "2.2.31",
+    "passport": "0.4.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "chai-http": "3.0.0",
+    "mocha": "3.5.0",
+    "sinon": "3.2.1"
+  }
+}
