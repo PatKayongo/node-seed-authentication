@@ -1,7 +1,7 @@
 const getDbConnection = require('./get-db-connection');
 const collectionName = 'users';
 
-module.exports.getUserByEmail = function getUserByEmail(email, callback) {
+module.exports.findUserByEmail = function findUserByEmail(email, callback) {
 	getDbConnection(function(err, db) {
 		if (err) {
 			return callback(err);
